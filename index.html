@@ -37,13 +37,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="number-container">
-                    <h1 id="Random Number"></h1>
+                    <h1 id="random-number"></h1>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <div class="win-loss">
-                    <h2 id="wins">wins</h2>
-                    <h2 id="losses">Losses</h2>
+                    <h2 id="wins">Wins: 0</h2>
+                    <h2 id="losses">Losses: 0</h2>
                 </div>
             </div>
         </div>
@@ -82,47 +82,7 @@
 
     </div>
 
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            // Initial Variables
-            var computerPick = Math.floor(Math.random() * 4) + 1;
-            var lockGame = false;
-
-            // We log the computer's pick to console to make it easier to troubleshoot
-            console.log("Computer Pick: " + computerPick);
-
-            // Here we create the on click event that gets the user"s pick
-            $(".btn-choice").on("click", function () {
-
-                // Here this lockGame line prevents the user from changing the option after the game is done.
-                if (lockGame !== true) {
-
-                    // We get the value associated with the button the user picked from here
-                    var yourPick = $(this).val();
-                    console.log("Your Pick: " + yourPick);
-
-                    // We then reveal the computer's pick in the html
-                    $("#computer-pick").text(computerPick);
-
-                    // If your pick matched the computer's pick you let them know.
-                    if (parseInt(yourPick) === computerPick) {
-                        $("#result").text("Yep! You got it! Refresh the page to play again.");
-                        lockGame = true;
-                    }
-
-                    // If the numbers did not match. You also let them know
-                    else {
-                        $("#result").text("Nope. Refresh the page to play again.");
-                        lockGame = true;
-                    }
-                }
-
-            });
-        });
-
-    </script>
+ 
 
 </body>
 
