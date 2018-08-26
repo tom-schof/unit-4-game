@@ -1,4 +1,65 @@
+body{
+    background-image: url("../images/patternhead61b-thumb.png");
+    font-family: serif;
+    font-weight: bold;
+}
+
 .container{
 
     width: 1440px;
+}
+
+#game-title{
+    background-color: rgb(201,113,38);
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 40pt;
+}
+
+p{
+    font-size: 16pt;
+    color: rgb(67,154,66);
+   
+    
+}
+.instructions{
+    padding: 30px;
+    height: 450px;
+    background-color: rgb(251,230,204);
+}
+
+.number-container{
+    padding: 30px;
+    background-color: rgb(91,200,128);
+    height: 200px;
+    color: rgb(80,38,77);
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
+
+
+.win-loss{
+    padding: 30px;
+    background-color: rgb(74,253,251);
+    height: 200px;
+    color: rgb(0,33,71);
+}
+
+.score-box-1{
+    padding: 30px;
+    background-color:rgb(43,162,148);
+    color: rgb(219,247,243);
+    margin: 10px;
+}
+.score-box-2{
+    padding: 30px;
+    background-color:rgb(43,162,148);
+    color:rgb(219,247,243);
+    height: 200px;
+    margin: 10px;
 }

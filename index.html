@@ -18,53 +18,64 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <div class="card mb-2">
-                    <div class="card-body text-center">
-                        <h1 id="CrystalsCollector">CrystalsCollector!</h1>
-                    </div>
+                <h1 id="game-title">CrystalsCollector!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="instructions">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points
+                        to your total score.</p>
+                    <p>You win the game by matching your total score to the random number. You lose the game if your total
+                        score goes above the random number. </p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time the game starts, the game will change the value of each crystal</p>
                 </div>
             </div>
         </div>
         <div class="row">
-                <div class="col-md-7">
-                    <div class="card mb-2">
-                        <div class="card-body text-center">
-                            <p>You will be given a random number at the start of the game.</p>
-                            <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-                            <p>You win the game by matching the </p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <div class="number-container">
+                    <h1 id="Random Number"></h1>
                 </div>
             </div>
+            <div class="col-md-2">
+                <div class="win-loss">
+                    <h2 id="wins">wins</h2>
+                    <h2 id="losses">Losses</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <button id="button-1" class="btn btn-danger btn-choice" value="1">
+                    <img src="./assets/images/red gem.jpg">
+                </button>
+                <button id="button-2" class="btn btn-danger btn-choice" value="2">
+                    <img src="./assets/images/blue gem.jpg">
+                </button>
+                <button id="button-3" class="btn btn-danger btn-choice" value="3">
+                    <img src="./assets/images/green gem.jpg">
+                </button>
+                <button id="button-4" class="btn btn-danger btn-choice" value="4">
+                    <img src="./assets/images/yellow gem.jpg">
+                </button>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-5">
-                <div class="card mb-2">
-                    <div class="card-body text-center">
-                        <button id="button-1" class="btn btn-danger btn-choice" value="1">
-                            <h1>1</h1>
-                        </button>
-                        <button id="button-2" class="btn btn-danger btn-choice" value="2">
-                            <h1>2</h1>
-                        </button>
-                        <button id="button-3" class="btn btn-danger btn-choice" value="3">
-                            <h1>3</h1>
-                        </button>
-                        <button id="button-4" class="btn btn-danger btn-choice" value="4">
-                            <h1>4</h1>
-                        </button>
-                    </div>
+                <div class="score-box-1">
+                    <h1 id="score-text">Your total score is:</h1>
                 </div>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-md-12">
-                <div class="card mb-2">
-                    <h3 class="card-header">Result</h3>
-                    <div class="card-body text-center">
-                        <h1 id="result"></h1>
-                    </div>
+            <div class="col-md-5">
+                <div class="score-box-2">
+                    <h1 id="score"></h1>
                 </div>
             </div>
         </div>
